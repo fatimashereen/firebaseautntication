@@ -1,0 +1,65 @@
+<!Doctype html>
+<html>
+    <head>
+      <title>Firebase Authentication</title>
+        <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700&display=swap" rel="stylesheet">
+       
+        <link rel="stylesheet"   href="style.css">
+       
+     </head> 
+     <body >
+       <div id="login_div" class="main-div">
+         <h3>Firebase Login</h3>
+         <input type="email" placeholder="Email..." id=" txtEmail"/>
+         <input type="password" placeholder="password" id="txtPassword"/>
+
+         <button id="btnLogin">Login to Account</button>
+       </div>
+
+
+<div id="user_div" class="loggedin-div">
+    <h3>Welcome User</h3>
+    <p id="user_para">Welcome to Firebase web login Example. You're currently logged in.</p>
+    <button id="btnlogout">Logout</button>
+  </div>
+
+<!-- The core Firebase JS SDK is always required and must be listed first 
+<script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-firestore.js"></script>-->
+
+<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+
+
+
+   
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCH4I_YrV-c5etqI-gTGYXgccQBl5O5NHI",
+    authDomain: "fir-loginsystem-cc0e3.firebaseapp.com",
+    databaseURL: "https://fir-loginsystem-cc0e3.firebaseio.com",
+    projectId: "fir-loginsystem-cc0e3",
+    storageBucket: "fir-loginsystem-cc0e3.appspot.com",
+    messagingSenderId: "672805166976",
+    appId: "1:672805166976:web:c5ecf0b969851338"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+
+
+     
+  
+     
+     
+     
+     
+     
+     <script src="index.js"></script>
+    
+    </body>   
+       
+
+
+    </html>
